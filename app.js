@@ -1,18 +1,38 @@
-//var LinkedList = require('./linkedList/LinkedList');
-//var Stack = require('./stack/Stack');
-//var Queue = require('./queue/Queue');
-//var BinarySearchTree = require('./binarySearchtree/BinarySearchTree');
-//var BubbleSort = require('./sorting/BubbleSort');
-var SelectionSort = require('./sorting/SelectionSort');
+// var binarySearchTree  =require('./binarySearchtree/BinarySearchTree');
 var express = require('express');
-var path = require('path');
 var app = express();
+// var graphs = require('./graphs/Graphs');
+var huffEncode = require('./HuffmanAlgorithm/HuffmanEncoding');
+// app.get('/asasa', (req,res)=>{
+//     console.log(req.protocol);
+//     res.send('hihihihi')
+// });
+// let isMatchingBrackets = function (str) {
+//     let stack = [];
+//     let map = {
+//         '(': ')',
+//         '[': ']',
+//         '{': '}'
+//     }
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine','ejs');
+//     for (let i = 0; i < str.length; i++) {
 
-app.get('/first',(req,res)=>{
-    res.render("first");
-});
+//         if (str[i] === '(' || str[i] === '{' || str[i] === '[' ) {
+//             stack.push(str[i]);
+//         }
+//         else {
+//             let last = stack.pop();
+//             if (str[i] !== map[last]) {
+//                 console.log(map[last]);
+//                 return "NO"};
+//         }
+//     }
+//         if (stack.length !== 0) {return "NO"};
 
-app.listen(8000,()=> console.log('listening to 8000'));
+//     return "YES";
+// }
+
+// console.log(isMatchingBrackets("{}[]()")); 
+// console.log(isMatchingBrackets("{[(])}"));
+
+app.listen(8000);
